@@ -245,12 +245,13 @@ $(function() {
       $(this).removeClass('art-active');
     }
   });
-
+  
   $("#form").submit(function() {
     $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize()
+      method: "POST",
+      url: "https://formsubmit.co/jpmarint@gmail.com",
+      data: $(this).serialize(),
+      dataType: "json"
     }).done(function() {
 
       var tl = anime.timeline({
