@@ -246,7 +246,7 @@ $(function() {
     }
   });
   
-  $("#form").submit(function() {
+  //$("#form").submit(function() {
     $.ajax({
       method: "POST",
       url: "https://formsubmit.co/jpmarint@gmail.com",
@@ -270,8 +270,8 @@ $(function() {
           height: '45px',
         })
     });
-    return false;
-  });
+    //return false;
+  //});
 
   // portfolio filter
   $('.art-filter a').on('click', function() {
